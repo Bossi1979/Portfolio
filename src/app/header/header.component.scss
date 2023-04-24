@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141D2F;
+    backdrop-filter: blur(32.5px);
+    height: 109.03px;
+
+    nav {
+        display: flex;
+        // margin-right: 100px;
+        padding: 37px 100px;
+
+        gap: 29px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+
+            &:hover {
+                color: #70E61C;
+                transition: 150ms;
+            }
+
+            img {
+                width: 150px;
+                height: 27.9px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .own-logo {
+        margin-left: 100px;
+    }
+
+    .underlineSelected {
+        width: 55.5px;
+        height: 0px;
+        border-bottom: 3px solid #9747FF;
+        margin-top: 4px;
+    }
+}

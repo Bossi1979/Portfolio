@@ -1,0 +1,10 @@
+<header>
+    <nav class="own-logo">
+        <a href=""><img src="../../assets/img/Group.png" alt=""></a>
+    </nav>
+    <nav>
+        <a (click)="navSelected(1)">About me <div *ngIf="selectedMenuBtn == 1"  class="underlineSelected"></div></a>
+        <a (click)="navSelected(2)">Skills<div *ngIf="selectedMenuBtn == 2" class="underlineSelected"></div></a>
+        <a (click)="navSelected(3)">Portfolio<div *ngIf="selectedMenuBtn == 3" class="underlineSelected"></div></a> 
+    </nav>
+</header>
