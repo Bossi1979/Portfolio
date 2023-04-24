@@ -24,6 +24,7 @@ header {
             &:hover {
                 color: #70E61C;
                 transition: 150ms;
+                cursor: pointer;
             }
 
             img {
@@ -39,9 +40,14 @@ header {
     }
 
     .underlineSelected {
+        position:absolute;
         width: 55.5px;
         height: 0px;
-        border-bottom: 3px solid #9747FF;
+        border-bottom: 3px solid #9747FF !important;
         margin-top: 4px;
+    }
+
+    .colorGreen{
+        color:#70E61C !important;
     }
 }

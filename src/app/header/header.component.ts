@@ -12,7 +12,12 @@ export class HeaderComponent {
 
 
   navSelected(navMenu: number): void {
-    console.log(navMenu);
     this.selectedMenuBtn = navMenu;
+    for (let i = 0; i < 4; i++) {
+      let MenuIds = document.getElementById(`menuId${i}`);
+      MenuIds?.classList.remove('colorGreen');
+    }
+    let selectedMenuId = document.getElementById(`menuId${navMenu}`);
+    selectedMenuId?.classList.add('colorGreen');
   }
 }
