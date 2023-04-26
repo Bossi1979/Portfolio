@@ -1,15 +1,16 @@
-.myHeadline{
-    display: flex; 
+.myHeadline {
+    display: flex;
     // padding-top: 187.97px;
-    justify-content: space-between; 
+    justify-content: space-between;
     // border: 2px red solid; 
     // height:172px; 
     // width: 100%;
-    margin-top: 187.97px;
+    margin-top: 13.05vw;
     // margin-left: -135px;
     margin-left: -20.5%;
     font-size: 5.44vw;
-    img{
+
+    img {
         object-fit: cover;
         // margin-right: 8px;
     }
@@ -44,14 +45,27 @@
     color: #9747FF;
 }
 
-.letsTalkButton{
+.letsTalkButton {
     justify-content: center;
     display: flex;
     margin-top: 3.0555vw;
     // width: 11.4583vw;
     height: 4.0278vw;
-    font-size:1.6vw ;
-    button{
-        margin-left: -15vw;
+    font-size: 1.6vw;
+
+    button {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: -13vw;
+        color: white;
+        background-color: #70E61C;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 1.6vw;
+        &:hover{
+            background-color: #9747FF;
+        }
     }
 }
