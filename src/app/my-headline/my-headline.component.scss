@@ -63,9 +63,39 @@
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         padding: 15px 30px;
-        font-size: 1.6vw;
-        &:hover{
+        font-size: 1.8vw;
+
+        &:hover {
             background-color: #9747FF;
+            padding: 20px 40px;
+            gap: 10px;
+        }
+
+        &:active {
+            // color: black;
+            // background-color: white;
+            animation-name: test;
+            animation-duration: 1s;
+            animation-delay: 0.1s;
+            color: white;
+            background-color: #70E61C;
+            padding: 15px 30px;
+            gap: 0px;
+            
+        }
+    }
+
+    @keyframes test{
+        0%{
+            color: black;
+            background-color: white;
+        }
+        100%{
+           
+            color: white;
+            background-color: #70E61C;
+            padding: 15px 30px;
+            gap: 0px;
         }
     }
 }
