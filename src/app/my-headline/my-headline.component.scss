@@ -1,0 +1,57 @@
+.myHeadline{
+    display: flex; 
+    // padding-top: 187.97px;
+    justify-content: space-between; 
+    // border: 2px red solid; 
+    // height:172px; 
+    // width: 100%;
+    margin-top: 187.97px;
+    // margin-left: -135px;
+    margin-left: -20.5%;
+    font-size: 5.44vw;
+    img{
+        object-fit: cover;
+        // margin-right: 8px;
+    }
+}
+
+.iAm {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 88%;
+    line-height: 120%;
+    color: white;
+    // rotate: -90deg;
+    transform: rotate(-90deg);
+    display: flex;
+    margin-right: -65px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.44vw;
+    line-height: 120%;
+    color: white;
+}
+
+.job {
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 44px;
+    font-size: 86%;
+    line-height: 120%;
+    color: #9747FF;
+}
+
+.letsTalkButton{
+    justify-content: center;
+    display: flex;
+    margin-top: 3.0555vw;
+    // width: 11.4583vw;
+    height: 4.0278vw;
+    font-size:1.6vw ;
+    button{
+        margin-left: -15vw;
+    }
+}

@@ -1,0 +1,20 @@
+.portraitFrame {
+    position:relative;
+    // width: 50.7vw;
+    // height: 705px;
+    aspect-ratio: 705/730;
+    // width: 730px;
+    // width: 100%;
+    background-image: url('../../assets/img/Neuer Ordner/photo shadows.png');
+    background-position: 65% -131%;
+    background-size: 115%;
+    background-repeat: no-repeat;
+
+    img {
+        height: 100%;
+        width: 82.2%;
+        margin-left: 46px;
+        // border: 2px black solid;
+        object-fit: contain;
+    }
+}
