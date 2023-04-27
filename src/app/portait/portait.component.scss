@@ -9,6 +9,8 @@
     background-position: 65% -131%;
     background-size: 111%;
     background-repeat: no-repeat;
+    z-index: 1;
+    
 
     img {
         height: 100%;
@@ -16,5 +18,30 @@
         margin-left: 46px;
         // border: 2px black solid;
         object-fit: contain;
+    }
+}
+
+.vectorC {
+    position: absolute;
+    width: 88vw;
+    height: 971.56px;
+    margin-top: -3vw;
+    margin-right: 0vw;
+    margin-left: 12vw;
+
+    background: linear-gradient(165.69deg, #1A2743 37.75%, #27334B 43.25%, #141D2F 70.18%);
+}
+
+.mask {
+    position: relative;
+    // top: 298.6px;
+    overflow: hidden;
+    top: 20.7361vw;
+    // position: relative;
+    // top: -505.6px;
+
+    img {
+        object-fit: cover;
+        width: 108vw;
     }
 }

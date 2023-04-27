@@ -8,13 +8,15 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { PortaitComponent } from './portait/portait.component';
 import { MyHeadlineComponent } from './my-headline/my-headline.component';
+import { BgShapesComponent } from './bg-shapes/bg-shapes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PortaitComponent,
-    MyHeadlineComponent
+    MyHeadlineComponent,
+    BgShapesComponent
   ],
   imports: [
     BrowserModule,
