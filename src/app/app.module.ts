@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { PortaitComponent } from './portait/portait.component';
 import { MyHeadlineComponent } from './my-headline/my-headline.component';
 import { BgShapesComponent } from './bg-shapes/bg-shapes.component';
+import { ReferenceLinksComponent } from './reference-links/reference-links.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BgShapesComponent } from './bg-shapes/bg-shapes.component';
     HeaderComponent,
     PortaitComponent,
     MyHeadlineComponent,
-    BgShapesComponent
+    BgShapesComponent,
+    ReferenceLinksComponent
   ],
   imports: [
     BrowserModule,
