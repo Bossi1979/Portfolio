@@ -4,12 +4,13 @@
     margin-top: 142px;
     margin-left: 102px;
     color: white;
-    gap: 140px;
-    width: calc(100vw - 204px);
+    // gap: 140px;
+    width: calc(100vw - 102px);
 
     .about-text {
         width: 402px;
         border: 2px red solid;
+        margin-right: 140px;
 
         h4 {
             font-family: 'Poppins';
@@ -83,8 +84,8 @@
 
     .portrait {
         display: flex;
-        justify-content: center;
-        width: 509px;
+        justify-content: flex-end;
+        width: 778px;
         height: 559px;
         border: 1px red solid;
 
