@@ -10,6 +10,7 @@ import { PortaitComponent } from './portait/portait.component';
 import { MyHeadlineComponent } from './my-headline/my-headline.component';
 import { BgShapesComponent } from './bg-shapes/bg-shapes.component';
 import { ReferenceLinksComponent } from './reference-links/reference-links.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReferenceLinksComponent } from './reference-links/reference-links.compo
     PortaitComponent,
     MyHeadlineComponent,
     BgShapesComponent,
-    ReferenceLinksComponent
+    ReferenceLinksComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

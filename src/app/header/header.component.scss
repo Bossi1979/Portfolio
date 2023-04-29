@@ -5,6 +5,10 @@ header {
     background-color: #141D2F;
     backdrop-filter: blur(32.5px);
     height: 109.03px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
 
     nav {
         display: flex;

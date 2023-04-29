@@ -1,0 +1,100 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 142px;
+    margin-left: 102px;
+    color: white;
+    gap: 140px;
+    width: calc(100vw - 204px);
+
+    .about-text {
+        width: 402px;
+        border: 2px red solid;
+
+        h4 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 79px;
+            line-height: 120%;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-bottom: 0px;
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: flex-end;
+            padding: 0px;
+            margin-top: 35px;
+            // gap: 35px;
+            height: 378px;
+            border: 2px green solid;
+
+            p {
+                height: 118px;
+                border: 1px orange solid;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+            }
+
+            .img-text {
+                display: flex;
+                height: 234px;
+                border: 1px blue solid;
+                width: 100%;
+                margin-top: 35px;
+
+                div {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    width: 100%;
+                    height: 50px;
+                    margin-right: 35px;
+
+                    img {
+                        width: 34.47px;
+                        height: 50px;
+                        object-fit: cover;
+                    }
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 120%;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+    .portrait {
+        display: flex;
+        justify-content: center;
+        width: 509px;
+        height: 559px;
+        border: 1px red solid;
+
+        img {
+            width: 453px;
+            height: 453px;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-top: 11px;
+
+        }
+    }
+}
