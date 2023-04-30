@@ -62,11 +62,21 @@
                     width: 100%;
                     height: 50px;
                     margin-right: 35px;
+                    overflow: visible;
+                    &:hover{
+                        height: 60px;
+                        
+                    }
 
                     img {
                         width: 34.47px;
                         height: 50px;
                         object-fit: cover;
+                        &:hover{
+                            height: 60px;
+                            width: 41.37px;
+                           
+                        }
                     }
 
                     p {
