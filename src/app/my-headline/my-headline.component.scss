@@ -47,13 +47,12 @@
 }
 
 .letsTalkButton {
-    justify-content: center;
     display: flex;
-    margin-top: 3.0555vw;
-    // width: 11.4583vw;
+    justify-content: center;
+    align-items: flex-start;
     height: 4.0278vw;
-    font-size: 1.6vw;
-
+    margin-top: 3.0555vw;
+    
     button {
         justify-content: center;
         align-items: center;
@@ -65,6 +64,7 @@
         border-radius: 10px;
         padding: 15px 30px;
         font-size: 1.8vw;
+        z-index: 4;
 
         &:hover {
             background-color: #9747FF;
@@ -73,9 +73,7 @@
         }
 
         &:active {
-            // color: black;
-            // background-color: white;
-            animation-name: test;
+            animation-name: btn-animation;
             animation-duration: 0.1s;
             animation-delay: 0.1s;
             color: white;
@@ -86,7 +84,7 @@
         }
     }
 
-    @keyframes test{
+    @keyframes btn-animation{
         0%{
             color: black;
             background-color: white;

@@ -12,6 +12,7 @@ import { BgShapesComponent } from './bg-shapes/bg-shapes.component';
 import { ReferenceLinksComponent } from './reference-links/reference-links.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ShadowsComponent } from './shadows/shadows.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillsComponent } from './skills/skills.component';
     BgShapesComponent,
     ReferenceLinksComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ShadowsComponent
   ],
   imports: [
     BrowserModule,
