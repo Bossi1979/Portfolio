@@ -53,7 +53,7 @@ export class SkillsComponent {
     },
     {
       icon: '../../assets/img/skills/material-icon.png',
-      text: 'Material design',
+      text: 'Material Design',
       animate: false,
     },
 
