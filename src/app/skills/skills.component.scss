@@ -1,0 +1,96 @@
+.bages-container {
+    display: flex;
+    width: 48.75vw;
+    margin-top: 255px;
+    flex-direction: row;
+    gap: 122.5px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+
+    .bage-div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+
+            .img-bage {
+                position: absolute;
+                width: 73px;
+                height: 60px;
+                object-fit: contain;
+            }
+
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            color: white;
+            width: 73px;
+        }
+    }
+
+    @keyframes jump {
+        0% {
+            top: 0px;
+        }
+
+        50% {
+            top: -11px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+    .animation {
+        background-color: bisque;
+        animation-name: jump;
+        animation-duration: 125ms;
+    }
+}
+
+.mySkills {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 44vw;
+    // margin-top: 322px;
+    color: #FFFFFF;
+
+
+    h4 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 79px;
+        line-height: 120%;
+        text-align: right;
+        margin-right: 42px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+        margin-right: 100px;
+
+        text-align: right;
+
+    }
+
+}

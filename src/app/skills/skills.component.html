@@ -1,0 +1,24 @@
+<div style="display: flex;">
+    <div class="bages-container">
+        <div *ngFor="let bage of skillsBages; let i = index" class="bage-div">
+            <div (mousemove)="mouseMove(i)" [class.animation]="skillsBages[i].animate">
+                <img src={{bage.icon}} alt="" class="img-bage">
+            </div>
+            <span>{{bage.text}}</span>
+        </div>
+    </div>
+    
+    <div class="mySkills">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="width:40vw;">
+                <h4>My skills</h4>
+            </div>
+            <div style="border: 4px solid #9747FF; width: 58px; height: 0px;"></div>
+        </div>
+        
+        <p>I have gained experience in building projects with various front end 
+            technologies and concepts.</p>
+    </div>
+
+</div>
+
