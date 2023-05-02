@@ -1,0 +1,95 @@
+.project-example {
+    display: flex;
+    justify-content: flex-end;
+    // flex-direction: row;
+    // background-color: aqua; 
+    margin: 116px 100px;
+    color: white;
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 620px;
+        height: 339px;
+        order: 1;
+
+        img {
+            max-width: 520px;
+            object-fit: contain;
+        }
+    }
+
+    .descriptions-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        // margin-top: 81px;
+        width: 513px;
+        gap: 15px;
+        order: 2;
+
+        h5 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 120%;
+            color: #9747FF;
+        }
+
+        h6 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+            color: #70E61C;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 86px;
+
+            .btn-live {
+                width: 152px;
+                height: 58px;
+                background: #9747FF;
+                border-radius: 10px;
+                color: white;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 120%;
+            }
+
+            .btn-git {
+                width: 137px;
+                height: 58px;
+                border: 1px solid #70E61C;
+                border-radius: 10px;
+                background: #141D2F;
+                color: white;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .order{
+        order: 3;
+    }
+
+
+}

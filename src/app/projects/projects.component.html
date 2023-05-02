@@ -1,0 +1,14 @@
+<div class="project-example" *ngFor="let project of projectData; let i = index;">
+    <div class="img-div" [class.order]="i%2 != 0">
+        <img src={{project.imgSrc}}>
+    </div>
+    <div class="descriptions-container">
+        <h5>{{project.title}}</h5>
+        <h6>{{project.skills}}</h6>
+        <p>{{project.description}}</p>
+        <div class="btn-container">
+            <button class="btn-live">Live Test</button>
+            <button class="btn-git">Github</button>
+        </div>
+    </div>
+</div>
