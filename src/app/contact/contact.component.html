@@ -1,0 +1,39 @@
+<p style="color: white;">contact works!</p>
+
+<div style="display: flex;">
+    <div style="color:white; width: 50%;">
+        textarea
+    </div>
+
+    <div style="width: calc(50% - 100px);">
+        <form class="was-validated" (submit)="formValidation();">
+            <div class="mb-3">
+                <input type="text" class="form-control" aria-label="file example" required placeholder="Your name" minlength="3"  (keyup)="nameValidation()">
+                <div class="feedback">Please enter your name</div>
+            </div>
+
+            <div class="mb-3">
+                <input type="email" class="form-control" aria-label="file example" required placeholder="Your email" minlength="7"(keyup)="emailValidation()">
+                <div class="feedback">Please enter your email</div>
+            </div>
+
+            <div class="mb-3">
+                <textarea class="form-control" id="validationTextarea" placeholder="Your message" required
+                    style="height: 220px;" (keyup)="textValidation()" minlength="7"></textarea>
+                <div class="feedback">
+                    Please enter a message in the textarea.
+                </div>
+
+
+            </div>
+
+            <div class="btn-div">
+                <button  type="submit" >Send message :)</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+
