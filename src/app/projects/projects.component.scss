@@ -70,6 +70,17 @@
                 font-weight: 400;
                 font-size: 23px;
                 line-height: 120%;
+                &:hover{
+                    background-color: #70E61C;
+                }
+                &:active {
+                    animation-name: btn-animation;
+                    animation-duration: 0.1s;
+                    animation-delay: 0.1s;
+                    color: white;
+                    background-color: #70E61C;
+                    gap: 0px;
+                }  
             }
 
             .btn-git {
@@ -83,6 +94,17 @@
                 font-weight: 400;
                 font-size: 23px;
                 line-height: 120%;
+                &:hover{
+                    background-color: #70E61C;
+                }
+                &:active {
+                    animation-name: btn-animation;
+                    animation-duration: 0.1s;
+                    animation-delay: 0.1s;
+                    color: white;
+                    background-color: #70E61C;
+                    gap: 0px;
+                }
             }
         }
     }
@@ -92,4 +114,16 @@
     }
 
 
+}
+
+@keyframes btn-animation{
+    0%{
+        color: black;
+        background-color: white;
+    }
+    100%{
+        color: white;
+        background-color: #70E61C;
+        gap: 0px;
+    }
 }
