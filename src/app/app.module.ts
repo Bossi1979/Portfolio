@@ -13,6 +13,7 @@ import { ReferenceLinksComponent } from './reference-links/reference-links.compo
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ShadowsComponent } from './shadows/shadows.component';
+import { PortfolioHeadlinesComponent } from './portfolio-headlines/portfolio-headlines.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ShadowsComponent } from './shadows/shadows.component';
     ReferenceLinksComponent,
     AboutMeComponent,
     SkillsComponent,
-    ShadowsComponent
+    ShadowsComponent,
+    PortfolioHeadlinesComponent
   ],
   imports: [
     BrowserModule,
