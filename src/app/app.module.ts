@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { UpArrowComponent } from './up-arrow/up-arrow.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,7 @@ import { UpArrowComponent } from './up-arrow/up-arrow.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    UpArrowComponent
+    UpArrowComponent,
   ],
   imports: [
     BrowserModule,

@@ -41,17 +41,112 @@ header {
 
     .own-logo {
         margin-left: 100px;
+        padding: 0px !important;
     }
 
     .underlineSelected {
-        position:absolute;
+        position: absolute;
         width: 55.5px;
         height: 0px;
         border-bottom: 3px solid #9747FF !important;
         margin-top: 4px;
     }
 
-    .colorGreen{
-        color:#70E61C !important;
+    
+}
+
+.colorGreen {
+    color: #70E61C !important;
+}
+
+
+
+.menu-btn {
+
+    &:hover {
+        cursor: pointer;
+
     }
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(20, 29, 47, 0.8);
+
+    z-index: 11;
+
+    .addHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 100px;
+
+        .close-X{
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 33px;
+        // background-color: aquamarine;
+
+        a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .underline{
+            height: 0px;
+            border: 3px solid #9747FF;
+            width: 55.5px;
+        }
+    }
+
+
+}
+
+.burger-menu{
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../assets/img/header/btn-menu.png);
+}
+
+@keyframes change-burger-menu {
+    0%{
+        background-image: url(../../assets/img/header/btn-menu.png);
+        opacity: 1.0;
+    }
+    50%{
+        background-image: url(../../assets/img/header/btn-menu-transition.png);
+        opacity: 0.5;
+    }
+    100%{
+        background-image: url(../../assets/img/header/btn-menu-transition.png);
+        opacity: 1;
+    }
+}
+
+.burger-animation{
+    animation-name: change-burger-menu;
+    animation-duration: 200ms;
 }
