@@ -1,0 +1,8 @@
+<div class="arrow-container">
+    <div (mouseover)="changeImage()">
+        <img src="../../assets/img/up-arrow/go-up-button.png" *ngIf="!changeImg">
+    </div>
+    <div (mouseleave)="returnChangeImg()">
+        <img src="../../assets/img/up-arrow/go-up-button-green.png" *ngIf="changeImg">
+    </div>
+</div>

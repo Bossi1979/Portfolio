@@ -1,0 +1,19 @@
+
+
+.arrow-container{
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: calc(100% - 100px); 
+    height: 179px; 
+    padding-bottom: 40px;
+
+    img{
+        width: 39px;
+        height: 39px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

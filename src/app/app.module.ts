@@ -17,6 +17,7 @@ import { PortfolioHeadlinesComponent } from './portfolio-headlines/portfolio-hea
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { UpArrowComponent } from './up-arrow/up-arrow.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioHeadlinesComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    UpArrowComponent
   ],
   imports: [
     BrowserModule,
