@@ -1,12 +1,20 @@
-<p style="color: white;">contact works!</p>
+<div class="header-contacts">
+    <div class="line"></div>
+    <h4 style="color:white;">Contact</h4>
+</div>
 
-<div style="display: flex;">
-    <div style="color:white; width: 50%;">
-        textarea
+<div class="formular-container">
+
+    <div class="formular-description">
+        <h5>Got a problem to solve?</h5>
+        <p>Contact me through this form, I am interested in hearing you, 
+            knowing your ideas and contributing to your projects with my work.</p>
+        <p>Need a Frontend developer? <span>Contact me!</span></p>
     </div>
 
-    <div style="width: calc(50% - 100px);">
+    <div class="formular">
         <form class="was-validated" (submit)="formValidation();">
+
             <div class="mb-3">
                 <input type="text" class="form-control" aria-label="file example" required placeholder="Your name" minlength="3"  (keyup)="nameValidation()">
                 <div class="feedback">Please enter your name</div>
@@ -20,20 +28,17 @@
             <div class="mb-3">
                 <textarea class="form-control" id="validationTextarea" placeholder="Your message" required
                     style="height: 220px;" (keyup)="textValidation()" minlength="7"></textarea>
-                <div class="feedback">
-                    Please enter a message in the textarea.
-                </div>
-
-
+                <div class="feedback">Please enter a message in the textarea.</div>
             </div>
 
             <div class="btn-div">
                 <button  type="submit" [disabled]="!valid" [class.btn-active]="valid" [class.btn]="!valid">Send message :)</button>
             </div>
+
         </form>
 
     </div>
-
+    
 </div>
 
 
