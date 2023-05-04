@@ -85,3 +85,10 @@ footer {
     border-bottom: 3px solid #70E61C !important;
     margin-top: 4px;
 }
+
+@media screen and (max-width:1000px){
+    footer{
+        justify-content: space-around !important;
+        flex-direction: column !important;
+    }
+}
