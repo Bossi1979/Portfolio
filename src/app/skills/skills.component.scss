@@ -1,5 +1,6 @@
 .skills-container{
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -75,6 +76,7 @@
     margin-top: 195px;
     color: #FFFFFF;
     justify-content: center;
+    align-items: flex-end;
 
     .header-outer{
         display: flex;
@@ -201,5 +203,90 @@
         margin-right: 100px;
         justify-content: space-between;
         margin-top: 85px;
+    }
+}
+
+@media screen and (min-width:1401px){
+    .bages-container {
+        gap: 8.5069vw;
+        margin-top: 17.7083vw;
+    
+        .bage-div {
+            gap: 10px;
+    
+            div {
+    
+                .img-bage {
+                    width: 5.069vw;
+                    height: 4.16667vw;
+                }
+    
+            }
+    
+            span {
+                font-size: 1.11111vw;
+                width: 5.069vw;
+            }
+        }
+    } 
+    
+    .mySkills {
+        width: max-content;
+        margin-top: 13.542vw;
+    
+        .header-outer{
+
+            .line{ 
+                width: 4.02777778vw; 
+                height: 0px;
+                border: 4px solid #9747FF;
+            }
+            
+            .header-inner{
+                width: 40vw;
+    
+                h4 {
+                    font-size: 5.4861vw;
+                    margin-right: 1.5972vw;
+                }
+            }
+            
+        }
+    
+        p {
+            font-size: 1.1111vw;
+            line-height: 120%;
+            /* or 19px */
+            margin-right: 100px;
+            margin-top: 34px;
+            margin-bottom: 57px;
+            text-align: right;
+    
+        }
+    
+        .button-div{
+            min-height: 6.944444vw;
+
+            button {
+                padding: 1.042vw 2.0834vw;
+                font-size: 1.5972vw;
+                &:hover {
+                    background-color: #9747FF;
+                    padding: 1.3888vw 2.7777vw;
+                    gap: 10px;
+                }
+                &:active {
+                    animation-name: btn-animation;
+                    animation-duration: 0.1s;
+                    animation-delay: 0.1s;
+                    color: white;
+                    background-color: #70E61C;
+                    padding: 1.042vw 2.0834vw;
+                    gap: 0px;
+                }
+        
+            }
+    
+        }
     }
 }
