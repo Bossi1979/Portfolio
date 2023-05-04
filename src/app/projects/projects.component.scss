@@ -1,8 +1,6 @@
 .project-example {
     display: flex;
-    justify-content: flex-end;
-    // flex-direction: row;
-    // background-color: aqua; 
+    justify-content: flex-end; 
     margin: 116px 100px;
     color: white;
 
@@ -24,7 +22,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        // margin-top: 81px;
         width: 513px;
         gap: 15px;
         order: 2;
@@ -70,9 +67,11 @@
                 font-weight: 400;
                 font-size: 23px;
                 line-height: 120%;
-                &:hover{
+
+                &:hover {
                     background-color: #70E61C;
                 }
+
                 &:active {
                     animation-name: btn-animation;
                     animation-duration: 0.1s;
@@ -80,7 +79,7 @@
                     color: white;
                     background-color: #70E61C;
                     gap: 0px;
-                }  
+                }
             }
 
             .btn-git {
@@ -94,9 +93,11 @@
                 font-weight: 400;
                 font-size: 23px;
                 line-height: 120%;
-                &:hover{
+
+                &:hover {
                     background-color: #70E61C;
                 }
+
                 &:active {
                     animation-name: btn-animation;
                     animation-duration: 0.1s;
@@ -109,23 +110,131 @@
         }
     }
 
-    .order{
+    .order {
         order: 3;
     }
 }
 
-.margin-correction{
+.direction-start {
+    justify-content: flex-start !important;
+    text-align: right;
+}
+
+.direction-end {
+    justify-content: flex-end !important;
+}
+
+.margin-correction {
     margin: 116px 100px 16px 100px !important;
 }
 
-@keyframes btn-animation{
-    0%{
+@keyframes btn-animation {
+    0% {
         color: black;
         background-color: white;
     }
-    100%{
+
+    100% {
         color: white;
         background-color: #70E61C;
         gap: 0px;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .img-div {
+        width: 43.0555vw !important;
+        height: 23.5416vw !important;
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+
+        img {
+            max-width: 36.1111vw !important;
+            object-fit: contain;
+        }
+    }
+
+    .descriptions-container {
+        width: 35.625vw !important;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .project-example {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .img-div {
+        order: 1 !important;
+        width: 559px !important;
+        height: unset !important;
+
+        img {
+            max-width: unset !important;
+            width: calc(98vw - 200px);
+            object-fit: contain;
+        }
+    }
+
+    .descriptions-container {
+        order: 2 !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: calc(98vw - 200px) !important;
+        text-align: center;
+    }
+
+    .btn-container {
+        width: calc(98vw - 200px);
+        gap: unset !important;
+        justify-content: space-between !important;
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .img-div {
+        width: 43.0555vw !important;
+        height: 23.5416vw !important;
+
+        img {
+            max-width: 36.1111vw !important;
+        }
+    }
+    .descriptions-container {
+        width: 35.625vw !important;
+        gap: 1.04167vw !important;
+
+        h5 {
+            font-size: 2.2222vw !important;
+        }
+
+        h6 {
+            font-size: 1.5972vw !important;
+        }
+
+        p {
+            font-size: 1.1111vw !important;
+        }
+
+        .btn-container {
+            gap: 5.972vw !important;
+
+            .btn-live {
+                width: 10.5556vw !important;
+                height: 4.0277vw !important;
+                font-size: 1.5972vw !important;
+            }
+
+            .btn-git {
+                width: 9.5138vw !important;
+                height: 4.0277vw !important;
+                font-size: 1.5972vw !important;
+            }
+        }
     }
 }
