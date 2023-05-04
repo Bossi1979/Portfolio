@@ -77,6 +77,32 @@
 
 }
 
+@media screen and (min-width: 1441px) {
+    .refs{
+        gap: 2.92vw !important;
+        span{
+            font-size: 1.6vw !important;
+        }
+        img{
+            height: 2.1vw !important;
+            width: 2.1vw !important;
+        }
+    }
+
+    .vertical-container{
+        top: -4.24vw !important;
+
+        div{
+            gap: 0.4861vw !important;
+            span{
+                font-size: 1.59722vw !important;
+            }
+        }
+
+
+    }
+}
+
 @media screen and (max-width: 900px) {
     .refs {
         gap: 30px !important;

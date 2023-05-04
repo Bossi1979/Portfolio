@@ -1,39 +1,39 @@
-<div style="position:relative">
+<div class="main-container">
 
     <app-header></app-header>
 
-    <div style="display: flex; background-color: #141D2F; position: relative;">
-        <app-portait style="width: 50.7vw;"></app-portait>
-        <app-my-headline style="width: 49.3vw; margin-right: 100px;"></app-my-headline>
-        <app-bg-shapes style="position:absolute; width: 98vw;"></app-bg-shapes>
-
+    <div class="headline-containers">
+        <app-portait class="portait-container" ></app-portait>
+        <app-my-headline class="headline-container"></app-my-headline>
+        <app-bg-shapes class="shape-container"></app-bg-shapes>
     </div>
 
-    <div style="display: flex; position: relative; z-index: 3;">
+    <div class="references-container">
         <app-reference-links></app-reference-links>
     </div>
 
-    <div id="about-me" style="display: flex; position: relative; z-index: 3;">
+    <div id="about-me" class="about-me-container">
         <app-about-me></app-about-me>
     </div>
 
     <app-skills id="skills"></app-skills>
 
-    <div style="position:absolute; top: 52.639vw;width: 100%;">
+    <div class="shadows-container">
         <app-shadows></app-shadows>
     </div>
     
     <hr id="portfolio">
+
     <app-portfolio-headlines ></app-portfolio-headlines>
     
     <app-projects></app-projects>
 
-    <hr style="height: 100px;" id="contact">
+    <hr class="hr-spacer" id="contact">
+
     <app-contact id="contact"></app-contact>
 
     <app-up-arrow></app-up-arrow>
 
     <app-footer></app-footer>
     
-
 </div>

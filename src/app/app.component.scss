@@ -1,0 +1,45 @@
+.main-container{
+    position: relative;
+
+    .headline-containers{
+        display: flex; 
+        position: relative;
+        background-color: #141D2F;
+        
+        .portait-container{
+            width: 50.7vw;
+        }
+
+        .headline-container{
+            width: 49.3vw; 
+            margin-right: 100px;
+        }
+
+        .shape-container{
+            position:absolute; 
+            width: 98vw;
+        }   
+    }
+
+    .references-container{
+        display: flex; 
+        position: relative; 
+        z-index: 3;
+    }
+
+    .about-me-container{
+        display: flex; 
+        position: relative; 
+        z-index: 3;
+    }
+
+    .shadows-container{
+        position:absolute; 
+        top: 52.639vw;
+        width: 100%;
+    }
+
+    .hr-spacer{
+        height: 100px;
+    }
+}
