@@ -125,3 +125,92 @@
         gap: 0px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .formular-container{
+        flex-direction: column;
+        .formular-description{
+            width: calc(100% - 100px) !important;
+
+            p{
+                width: unset !important;
+            }
+        }
+        .formular{
+            margin-left: 100px !important;
+            width: calc(100% - 200px) !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .header-contacts {
+        padding-bottom: 5.9027vw;
+    
+        .line {
+            width: 50px;
+            margin-right: 50px;
+        }
+    
+        h4 {
+            font-size: 5.4861vw;
+        }
+    }
+    
+    .formular-container {
+        display: flex;
+    
+        .formular-description {
+    
+            h5 {
+                font-size: 2.2222vw !important;
+                padding-bottom: 2.4305vw !important;
+            }
+    
+            p {
+                width: 32.8472vw !important;
+                font-size: 1.1111vw !important;
+                margin-bottom: 1.7361vw !important;
+            }
+        }
+    
+        .formular{
+    
+            .feedback {
+                min-height: 1.4583vw !important;
+            }
+            
+            .btn-div {
+                height: 6.9444vw !important;
+            }
+            
+            .btn {
+                padding: 1.0416vw 2.0833vw !important;
+                font-size: 1.5972vw !important;
+            }
+            
+            .btn-active {
+                padding: 1.0416vw 2.0833vw !important;
+                font-size: 1.5972vw !important;
+            
+                &:hover {
+                    padding: 1.3888vw 2.7777vw !important;
+                    gap: 10px;
+                    cursor: pointer;
+                }
+            
+                &:active {
+                    animation-name: btn-animation;
+                    animation-duration: 0.1s;
+                    animation-delay: 0.1s;
+                    color: white;
+                    background-color: #70E61C;
+                    padding: 1.0416vw 2.0833vw !important;
+                    gap: 0px;
+                }
+            }
+    
+        }
+    }
+    
+}
