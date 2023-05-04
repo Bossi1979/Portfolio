@@ -18,4 +18,8 @@ export class UpArrowComponent {
     this.changeImg = false;
   }
 
+  goToMyHeadline(){
+    window.location.href = '#myHeadline';
+  }
+
 }
