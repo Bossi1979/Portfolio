@@ -128,35 +128,76 @@
         margin-right: 100px;
          
 
-        button {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        // button {
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: center;
+        //     align-items: center;
+        //     color: white;
+        //     background-color: #70E61C;
+        //     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        //     border-radius: 10px;
+        //     padding: 15px 30px;
+        //     font-size: 23px;
+        //     &:hover {
+        //         background-color: #9747FF;
+        //         padding: 20px 40px;
+        //         gap: 10px;
+        //     }
+        //     &:active {
+        //         animation-name: btn-animation;
+        //         animation-duration: 0.1s;
+        //         animation-delay: 0.1s;
+        //         color: white;
+        //         background-color: #70E61C;
+        //         padding: 15px 30px;
+        //         gap: 0px;
+        //     }
+    
+        // }
+
+    }
+}
+
+.button-div{
+    display: flex; 
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-height: 100px; 
+    margin-right: 100px;
+     
+
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #70E61C;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 23px;
+        &:hover {
+            background-color: #9747FF;
+            padding: 20px 40px;
+            gap: 10px;
+        }
+        &:active {
+            animation-name: btn-animation;
+            animation-duration: 0.1s;
+            animation-delay: 0.1s;
             color: white;
             background-color: #70E61C;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
             padding: 15px 30px;
-            font-size: 23px;
-            &:hover {
-                background-color: #9747FF;
-                padding: 20px 40px;
-                gap: 10px;
-            }
-            &:active {
-                animation-name: btn-animation;
-                animation-duration: 0.1s;
-                animation-delay: 0.1s;
-                color: white;
-                background-color: #70E61C;
-                padding: 15px 30px;
-                gap: 0px;
-            }
-    
+            gap: 0px;
         }
 
     }
+}
+
+#btn-mobile{
+    display: none;
 }
 
 @keyframes btn-animation{
@@ -192,7 +233,6 @@
             .header-inner{
                 width: unset;
 
-                
             }
         }
     }
@@ -203,6 +243,18 @@
         margin-right: 100px;
         justify-content: space-between;
         margin-top: 85px;
+    }
+
+    #btn-mobile{
+        display: flex !important;
+        margin-left: 100px;
+        justify-content: center;
+        margin-top: 57px;
+        order: 3;
+    }
+
+    #btn-n-mobile{
+        display: none !important;
     }
 }
 
@@ -290,3 +342,4 @@
         }
     }
 }
+

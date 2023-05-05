@@ -176,7 +176,7 @@
 
         img {
             max-width: unset !important;
-            width: calc(98vw - 200px);
+            width: calc(100% - 200px);
             object-fit: contain;
         }
     }
@@ -185,12 +185,12 @@
         order: 2 !important;
         justify-content: center !important;
         align-items: center !important;
-        width: calc(98vw - 200px) !important;
+        width: calc(100% - 200px) !important;
         text-align: center;
     }
 
     .btn-container {
-        width: calc(98vw - 200px);
+        width: calc(100% - 200px);
         gap: unset !important;
         justify-content: space-between !important;
     }
