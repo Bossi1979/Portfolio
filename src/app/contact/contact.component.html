@@ -16,12 +16,12 @@
         <form class="was-validated" (submit)="formValidation();">
 
             <div class="mb-3">
-                <input type="text" class="form-control" aria-label="file example" required placeholder="Your name" minlength="3"  (keyup)="nameValidation()">
+                <input type="text" class="form-control"  required placeholder="Your name" minlength="3"  (keyup)="nameValidation()" autocomplete="doNotAutoComplete">
                 <div class="feedback">Please enter your name</div>
             </div>
 
             <div class="mb-3">
-                <input type="email" class="form-control" aria-label="file example" required placeholder="Your email" minlength="7"(keyup)="emailValidation()">
+                <input type="email" class="form-control"  required placeholder="Your email" minlength="7" (keyup)="emailValidation()" autocomplete="doNotAutoComplete">
                 <div class="feedback">Please enter your email</div>
             </div>
 
@@ -38,6 +38,8 @@
         </form>
 
     </div>
+
+    
     
 </div>
 

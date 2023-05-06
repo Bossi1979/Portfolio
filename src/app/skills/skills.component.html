@@ -1,5 +1,13 @@
 <div class="skills-container">
+
+    
+
     <div class="bages-container">
+        
+        <div style="position:absolute; z-index: -2; left: 0px;">
+            <img src="../../assets/img/shadows/shadow-green1.png" class="shadow-green1">
+        </div>
+
         <div *ngFor="let bage of skillsBages; let i = index" class="bage-div">
             <div (mousemove)="mouseMove(i)" [class.animation]="skillsBages[i].animate">
                 <img src={{bage.icon}} alt="" class="img-bage">
