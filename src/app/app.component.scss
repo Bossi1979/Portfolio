@@ -9,6 +9,7 @@
         position: relative;
         background-color: #141D2F;
         // z-index: -2;
+        margin-top: 109.03px;
         
         .portait-container{
             width: 50.7vw;
@@ -54,4 +55,27 @@
 
 hr{
     opacity: 0;
+}
+
+
+@media screen and (max-width:768px){
+    .headline-containers{
+        flex-direction: column;
+        align-items: center;
+        
+        .portait-container{
+            width: calc(100vw - 200px) !important;
+        }
+
+        .headline-container{
+            width: calc(100vw - 200px) !important; 
+            margin-right: unset !important;
+        }
+
+        .shape-container{
+            position:absolute; 
+            width: 100%;
+            top:100%;
+        }   
+    }
 }

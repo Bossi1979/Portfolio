@@ -28,23 +28,9 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .mask {
+        top: -65.7361vw !important;
 
-@media screen and (max-width: 1140px) {
-    mask {
-        top: 18.7361vw;
-
-        img {
-            width: 117vw;
-        }
-    }
-}
-
-@media screen and (max-width: 930px) {
-    mask {
-        top: 20.7361vw;
-
-        img {
-            width: 113vw;
-        }
     }
 }

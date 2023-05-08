@@ -32,7 +32,7 @@
 .name {
     font-style: normal;
     font-weight: 700;
-    font-size: 5.44vw;
+    font-size: 100%;
     line-height: 120%;
     color: white;
 }
@@ -97,4 +97,35 @@
             gap: 0px;
         }
     }
+}
+
+
+@media screen and (max-width:768px){
+    .myHeadline {
+        position:relative;
+        z-index: 1;
+        justify-content: space-between;
+        margin-left: unset !important;
+        gap: 25px !important;
+        font-size: 6.46875vw !important;
+        margin-top: 22px !important;
+
+        div{
+            font-size: 100% !important;
+        }
+
+    }
+    
+    
+    .letsTalkButton {
+        // height: 4.0278vw;
+        height: fit-content;
+       
+        margin-top: 3.0555vw;
+        
+        button {
+            font-size: 23px;
+        }
+    }
+
 }

@@ -47,3 +47,31 @@
         width: 108vw;
     }
 }
+
+@media screen and (max-width:768px){
+    .portraitFrame {
+        aspect-ratio: 705/730;
+        
+
+        // background-position: 65% -131%;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        
+
+        background-size: 111%;
+        background-repeat: no-repeat;
+        z-index: 1;
+        
+    
+        img {
+            height: 100%;
+            width: 82.2%;
+
+            margin-left: unset;
+
+            // border: 2px black solid;
+            object-fit: contain;
+        }
+    }
+}

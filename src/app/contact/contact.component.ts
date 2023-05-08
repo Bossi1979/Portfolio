@@ -1,16 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
+  ngOnInit(): void {
+    this.test();
+  }
 
 valid = false;
 inputs = document.getElementsByTagName('input');
 text = document.getElementsByTagName('textarea');
 feedback = document.getElementsByClassName('feedback');
+
+invalidText = false;
 
 formValidation() {
   // Get all the inputs on the page
@@ -96,5 +102,13 @@ textValidation(){
   }
 }
 
+test(){
+  document.getElementById('test').classList;
+  setTimeout(() => {
+    this.invalidText = document.getElementById('test').classList.contains('invalid-feedback');
+    console.log(this.invalidText);
+  },500)
+  
+}
 
 }

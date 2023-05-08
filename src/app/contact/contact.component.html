@@ -13,26 +13,26 @@
     </div>
 
     <div class="formular">
-        <form class="was-validated" (submit)="formValidation();">
+        <form class="was-validated" (submit)="formValidation();" action="https://stefan-boskamp.de/send_mail.php" method="POST">
 
             <div class="mb-3">
-                <input type="text" class="form-control"  required placeholder="Your name" minlength="3"  (keyup)="nameValidation()" autocomplete="doNotAutoComplete">
+                <input type="text" class="form-control"  required placeholder="Your name" minlength="3" name="name"  (blur)="nameValidation()" autocomplete="doNotAutoComplete">
                 <div class="feedback">Please enter your name</div>
             </div>
 
             <div class="mb-3">
-                <input type="email" class="form-control"  required placeholder="Your email" minlength="7" (keyup)="emailValidation()" autocomplete="doNotAutoComplete">
-                <div class="feedback">Please enter your email</div>
+                <input type="email" class="form-control"  required placeholder="Your email" minlength="7" name="email" (blur)="emailValidation()" autocomplete="doNotAutoComplete">
+                <div class="feedback" >Please enter your email</div>
             </div>
 
             <div class="mb-3">
                 <textarea class="form-control" id="validationTextarea" placeholder="Your message" required
-                    style="height: 220px;" (keyup)="textValidation()" minlength="7"></textarea>
-                <div class="feedback">Please enter a message in the textarea.</div>
+                    style="height: 220px;" (blur)="textValidation()" minlength="2" name="message"></textarea>
+                <div  id="test" class="feedback " [class.opacity-zero]="!invalidText">Please enter a message in the textarea.</div>
             </div>
 
             <div class="btn-div">
-                <button  type="submit" [disabled]="!valid" [class.btn-active]="valid" [class.btn]="!valid">Send message :)</button>
+                <button  type="submit" [disabled]="!valid" [class.btn-active]="valid" [class.btn]="!valid" (click)="test()">Send message :)</button>
             </div>
 
         </form>
