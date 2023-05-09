@@ -78,23 +78,37 @@
 }
 
 @media screen and (min-width: 1441px) {
-    .refs{
+    .refs {
         gap: 2.92vw !important;
-        span{
+
+        span {
             font-size: 1.6vw !important;
         }
-        img{
-            height: 2.1vw !important;
-            width: 2.1vw !important;
+
+        div {
+            img {
+                height: 2.1vw !important;
+                width: 2.1vw !important;
+
+                &:hover {
+                    width: 2.7778vw !important;
+                    height: 2.7778vw !important;
+                    gap: 31px;
+                    cursor: pointer;
+                }
+            }
+
         }
+
     }
 
-    .vertical-container{
+    .vertical-container {
         top: -4.24vw !important;
 
-        div{
+        div {
             gap: 0.4861vw !important;
-            span{
+
+            span {
                 font-size: 1.59722vw !important;
             }
         }
@@ -115,11 +129,39 @@
 }
 
 @media screen and (max-width: 770px) {
-    .vertical-container{
+    .vertical-container {
         display: none !important;
     }
+
+    span {
+        display: none !important;
+    }
+
+    img {
+        width: 30px;
+        height: 29.26px;
+
+        &:hover {
+            width: 41.01px;
+            height: 40px;
+            gap: 31px;
+            cursor: pointer;
+        }
+    }
+
 
 }
 
 
+@media screen and (max-width: 620px) {
 
+    .refs {
+        gap: 30px !important;
+
+        .line {
+            width: 50px !important;
+        }
+
+    }
+
+}

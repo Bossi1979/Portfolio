@@ -1,45 +1,45 @@
-.main-container{
+.main-container {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 
-    .headline-containers{
-        display: flex; 
+    .headline-containers {
+        display: flex;
         position: relative;
         background-color: #141D2F;
         // z-index: -2;
         margin-top: 109.03px;
-        
-        .portait-container{
+
+        .portait-container {
             width: 50.7vw;
         }
 
-        .headline-container{
-            width: 49.3vw; 
+        .headline-container {
+            width: 49.3vw;
             margin-right: 100px;
         }
 
-        .shape-container{
-            position:absolute; 
+        .shape-container {
+            position: absolute;
             width: 100%;
-        }   
+        }
     }
 
-    .references-container{
-        display: flex; 
-        position: relative; 
+    .references-container {
+        display: flex;
+        position: relative;
         z-index: 3;
     }
 
-    .about-me-container{
-        display: flex; 
-        position: relative; 
+    .about-me-container {
+        display: flex;
+        position: relative;
         z-index: 3;
     }
 
-    .shadows-container{
-        position:absolute; 
+    .shadows-container {
+        position: absolute;
         // top: 52.639vw;
         width: 100%;
         height: 100%;
@@ -48,34 +48,61 @@
         z-index: -1;
     }
 
-    .hr-spacer{
+    .hr-spacer {
         height: 100px;
     }
 }
 
-hr{
+hr {
     opacity: 0;
 }
 
 
-@media screen and (max-width:768px){
-    .headline-containers{
+@media screen and (max-width:768px) {
+    .headline-containers {
         flex-direction: column;
         align-items: center;
-        
-        .portait-container{
+
+        .portait-container {
             width: calc(100vw - 200px) !important;
         }
 
-        .headline-container{
-            width: calc(100vw - 200px) !important; 
+        .headline-container {
+            width: calc(100vw - 200px) !important;
             margin-right: unset !important;
         }
 
-        .shape-container{
-            position:absolute; 
+        .shape-container {
+            position: absolute;
             width: 100%;
-            top:100%;
-        }   
+            top: 100%;
+        }
     }
+}
+
+@media screen and (max-width:620px) {
+    h4{
+        font-size: 12.74193548vw !important;
+    }
+
+    .headline-containers {
+        flex-direction: column;
+        align-items: center;
+
+        .portait-container {
+            width: calc(100vw - 100px) !important;
+        }
+
+        .headline-container {
+            width: calc(100vw - 100px) !important;
+            margin-right: unset !important;
+        }
+
+        .shape-container {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+        }
+    }
+
 }
