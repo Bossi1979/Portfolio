@@ -53,7 +53,7 @@ header {
         margin-top: 4px;
     }
 
-    
+
 }
 
 .colorGreen {
@@ -86,7 +86,7 @@ header {
         width: 100%;
         padding-right: 100px;
 
-        .close-X{
+        .close-X {
             &:hover {
                 cursor: pointer;
             }
@@ -112,7 +112,7 @@ header {
             text-decoration: none;
         }
 
-        .underline{
+        .underline {
             height: 0px;
             border: 3px solid #9747FF;
             width: 55.5px;
@@ -122,7 +122,7 @@ header {
 
 }
 
-.burger-menu{
+.burger-menu {
     width: 32px;
     height: 32px;
     background-position: center;
@@ -131,21 +131,23 @@ header {
 }
 
 @keyframes change-burger-menu {
-    0%{
+    0% {
         background-image: url(../../assets/img/header/btn-menu.png);
         opacity: 1.0;
     }
-    50%{
+
+    50% {
         background-image: url(../../assets/img/header/btn-menu-transition.png);
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         background-image: url(../../assets/img/header/btn-menu-transition.png);
         opacity: 1;
     }
 }
 
-.burger-animation{
+.burger-animation {
     animation-name: change-burger-menu;
     animation-duration: 200ms;
 }
@@ -153,48 +155,39 @@ header {
 
 @media screen and (max-width: 620px) {
     header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #141D2F;
-        backdrop-filter: blur(32.5px);
-        height: 109.03px;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 10;
-        width: 100%;
     
         nav {
             display: flex;
             // margin-right: 100px;
             padding: 37px 50px 37px 0px;
-    
+
             gap: 29px;
         }
-    
+
         .own-logo {
             margin-left: 50px;
             padding: 0px !important;
         }
     }
 
-    @media screen and (max-width:460px) {
-        nav {
-            display: flex;
-            // margin-right: 100px;
-            padding: 37px 16px 37px 0px !important;
-    
-            gap: 29px;
-        }
-    
-        .own-logo {
-            margin-left: 16px !important;
-            padding: 0px !important;
+    .mobile-menu {
+        .addHeader {
+            padding-right: 50px;
         }
     }
-    
-    
-    
-    
+}
+
+@media screen and (max-width:460px) {
+    nav {
+        display: flex;
+        // margin-right: 100px;
+        padding: 37px 16px 37px 0px !important;
+
+        gap: 29px;
+    }
+
+    .own-logo {
+        margin-left: 16px !important;
+        padding: 0px !important;
+    }
 }
