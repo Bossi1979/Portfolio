@@ -178,6 +178,21 @@ header {
             padding: 0px !important;
         }
     }
+
+    @media screen and (max-width:460px) {
+        nav {
+            display: flex;
+            // margin-right: 100px;
+            padding: 37px 16px 37px 0px !important;
+    
+            gap: 29px;
+        }
+    
+        .own-logo {
+            margin-left: 16px !important;
+            padding: 0px !important;
+        }
+    }
     
     
     

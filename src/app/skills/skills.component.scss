@@ -1,4 +1,4 @@
-.skills-container{
+.skills-container {
     display: flex;
     justify-content: space-between;
 }
@@ -78,18 +78,18 @@
     justify-content: center;
     align-items: flex-end;
 
-    .header-outer{
+    .header-outer {
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
 
-        .line{ 
-            width: 58px; 
+        .line {
+            width: 58px;
             height: 0px;
             border: 4px solid #9747FF;
         }
-        
-        .header-inner{
+
+        .header-inner {
             width: 40vw;
 
             h4 {
@@ -103,7 +103,7 @@
                 margin-right: 42px;
             }
         }
-        
+
     }
 
     p {
@@ -119,14 +119,14 @@
 
     }
 
-    .button-div{
-        display: flex; 
+    .button-div {
+        display: flex;
         justify-content: flex-end;
         align-items: flex-start;
-        min-height: 100px; 
+        min-height: 100px;
         // margin-left: 200px;
         margin-right: 100px;
-         
+
 
         // button {
         //     display: flex;
@@ -153,19 +153,19 @@
         //         padding: 15px 30px;
         //         gap: 0px;
         //     }
-    
+
         // }
 
     }
 }
 
-.button-div{
-    display: flex; 
+.button-div {
+    display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    min-height: 100px; 
+    min-height: 100px;
     margin-right: 100px;
-     
+
 
     button {
         display: flex;
@@ -178,11 +178,13 @@
         border-radius: 10px;
         padding: 15px 30px;
         font-size: 23px;
+
         &:hover {
             background-color: #9747FF;
             padding: 20px 40px;
             gap: 10px;
         }
+
         &:active {
             animation-name: btn-animation;
             animation-duration: 0.1s;
@@ -196,16 +198,17 @@
     }
 }
 
-#btn-mobile{
+#btn-mobile {
     display: none;
 }
 
-@keyframes btn-animation{
-    0%{
+@keyframes btn-animation {
+    0% {
         color: black;
         background-color: white;
     }
-    100%{
+
+    100% {
         color: white;
         background-color: #70E61C;
         padding: 15px 30px;
@@ -213,31 +216,31 @@
     }
 }
 
-@media screen and (max-width:1100px){
-    .skills-container{
+@media screen and (max-width:1100px) {
+    .skills-container {
         display: flex;
         flex-direction: column;
     }
 
-    .mySkills{
+    .mySkills {
         order: 1;
         width: 100% !important;
 
-        p{
+        p {
             margin-left: 100px;
         }
 
-        .header-outer{
+        .header-outer {
             justify-content: flex-end;
 
-            .header-inner{
+            .header-inner {
                 width: unset;
 
             }
         }
     }
 
-    .bages-container{
+    .bages-container {
         order: 2;
         width: calc(100% - 200px);
         margin-right: 100px;
@@ -245,66 +248,67 @@
         margin-top: 85px;
     }
 
-    #btn-mobile{
+    #btn-mobile {
         display: flex !important;
-        margin-left: 100px;
+        // margin-left: 100px;
         justify-content: center;
         margin-top: 57px;
         order: 3;
+        width: 100%;
     }
 
-    #btn-n-mobile{
+    #btn-n-mobile {
         display: none !important;
     }
 }
 
-@media screen and (min-width:1401px){
+@media screen and (min-width:1401px) {
     .bages-container {
         gap: 8.5069vw;
         margin-top: 17.7083vw;
-    
+
         .bage-div {
             gap: 10px;
-    
+
             div {
-    
+
                 .img-bage {
                     width: 5.069vw;
                     height: 4.16667vw;
                 }
-    
+
             }
-    
+
             span {
                 font-size: 1.11111vw;
                 width: 5.069vw;
             }
         }
-    } 
-    
+    }
+
     .mySkills {
         width: max-content;
         margin-top: 13.542vw;
-    
-        .header-outer{
 
-            .line{ 
-                width: 4.02777778vw; 
+        .header-outer {
+
+            .line {
+                width: 4.02777778vw;
                 height: 0px;
                 border: 4px solid #9747FF;
             }
-            
-            .header-inner{
+
+            .header-inner {
                 width: 40vw;
-    
+
                 h4 {
                     font-size: 5.4861vw;
                     margin-right: 1.5972vw;
                 }
             }
-            
+
         }
-    
+
         p {
             font-size: 1.1111vw;
             line-height: 120%;
@@ -313,20 +317,22 @@
             margin-top: 34px;
             margin-bottom: 57px;
             text-align: right;
-    
+
         }
-    
-        .button-div{
+
+        .button-div {
             min-height: 6.944444vw;
 
             button {
                 padding: 1.042vw 2.0834vw;
                 font-size: 1.5972vw;
+
                 &:hover {
                     background-color: #9747FF;
                     padding: 1.3888vw 2.7777vw;
                     gap: 10px;
                 }
+
                 &:active {
                     animation-name: btn-animation;
                     animation-duration: 0.1s;
@@ -336,26 +342,66 @@
                     padding: 1.042vw 2.0834vw;
                     gap: 0px;
                 }
-        
+
             }
-    
+
         }
     }
 }
 
-@media screen and (max-width:620px) {
-    h4{
-    font-size: 12.74193548vw !important;
+@media screen and (max-width:684px) {
+    .bages-container {
+        gap: 86.5px;
     }
 
-    .line{
+}
+
+
+
+@media screen and (max-width:620px) {
+    h4 {
+        font-size: 12.74193548vw !important;
+    }
+
+    .line {
         width: 50px !important;
     }
 
-    .bages-container{
+    .bages-container {
         width: calc(100% - 100px);
         margin-left: 50px !important;
         margin-right: 50px !important;
     }
+
+    .mySkills {
+        margin-right: 50px !important;
+    }
+
+    p{
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+
 }
 
+@media screen and (max-width:460px) {
+    .line {
+        width: 16px !important;
+    }
+
+    .bages-container {
+        width: calc(100% - 32px);
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+
+    .mySkills {
+        margin-right: 16px !important;
+    }
+
+    p{
+        margin-right: 16px !important;
+        margin-left: 16px !important;
+    }
+
+}

@@ -171,12 +171,12 @@
 
     .img-div {
         order: 1 !important;
-        width: 559px !important;
+        width: 100% !important;
         height: unset !important;
 
         img {
             max-width: unset !important;
-            width: calc(100% - 200px);
+            width: 100%;
             object-fit: contain;
         }
     }
@@ -236,5 +236,17 @@
                 font-size: 1.5972vw !important;
             }
         }
+    }
+}
+
+@media screen and (max-width:620px) {
+    .project-example{
+        margin: 116px 50px !important;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .project-example{
+        margin: 116px 16px !important;
     }
 }

@@ -46,27 +46,28 @@
             font-size: 16px;
             line-height: 120%;
             margin-bottom: 25px;
-            span{
+
+            span {
                 font-weight: 700;
             }
 
         }
     }
 
-    .formular{
+    .formular {
         width: calc(50% - 100px);
 
         .feedback {
             min-height: 21px;
         }
-        
+
         .btn-div {
             display: flex;
             justify-content: center;
             align-items: flex-start;
             height: 100px;
         }
-        
+
         .btn {
             padding: 15px 30px;
             background: #70E61C;
@@ -79,7 +80,7 @@
             color: #FFFFFF;
             opacity: 0.5;
         }
-        
+
         .btn-active {
             padding: 15px 30px;
             background: #70E61C;
@@ -90,14 +91,14 @@
             font-size: 23px;
             line-height: 120%;
             color: #FFFFFF;
-        
+
             &:hover {
                 background-color: #9747FF;
                 padding: 20px 40px;
                 gap: 10px;
                 cursor: pointer;
             }
-        
+
             &:active {
                 animation-name: btn-animation;
                 animation-duration: 0.1s;
@@ -112,7 +113,7 @@
     }
 }
 
-.opacity-zero{
+.opacity-zero {
     opacity: 0;
 }
 
@@ -131,16 +132,18 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .formular-container{
+    .formular-container {
         flex-direction: column;
-        .formular-description{
+
+        .formular-description {
             width: calc(100% - 100px) !important;
 
-            p{
+            p {
                 width: unset !important;
             }
         }
-        .formular{
+
+        .formular {
             margin-left: 100px !important;
             width: calc(100% - 200px) !important;
         }
@@ -150,59 +153,59 @@
 @media screen and (min-width: 1441px) {
     .header-contacts {
         padding-bottom: 5.9027vw;
-    
+
         .line {
             width: 50px;
             margin-right: 50px;
         }
-    
+
         h4 {
             font-size: 5.4861vw;
         }
     }
-    
+
     .formular-container {
         display: flex;
-    
+
         .formular-description {
-    
+
             h5 {
                 font-size: 2.2222vw !important;
                 padding-bottom: 2.4305vw !important;
             }
-    
+
             p {
                 width: 32.8472vw !important;
                 font-size: 1.1111vw !important;
                 margin-bottom: 1.7361vw !important;
             }
         }
-    
-        .formular{
-    
+
+        .formular {
+
             .feedback {
                 min-height: 1.4583vw !important;
             }
-            
+
             .btn-div {
                 height: 6.9444vw !important;
             }
-            
+
             .btn {
                 padding: 1.0416vw 2.0833vw !important;
                 font-size: 1.5972vw !important;
             }
-            
+
             .btn-active {
                 padding: 1.0416vw 2.0833vw !important;
                 font-size: 1.5972vw !important;
-            
+
                 &:hover {
                     padding: 1.3888vw 2.7777vw !important;
                     gap: 10px;
                     cursor: pointer;
                 }
-            
+
                 &:active {
                     animation-name: btn-animation;
                     animation-duration: 0.1s;
@@ -213,14 +216,55 @@
                     gap: 0px;
                 }
             }
-    
+
         }
     }
-    
+
 }
 
 @media screen and (max-width:620px) {
-    h4{
-    font-size: 12.74193548vw !important;
+    h4 {
+        font-size: 12.74193548vw !important;
+    }
+
+    h5 {
+        font-size: 5.61vw !important;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .formular-container {
+        .formular {
+            margin-left: 50px !important;
+            width: calc(100% - 100px) !important;
+        }
+        .formular-description {
+            padding-left: 50px !important;
+            width: calc(100% - 100px) !important;
+        }
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .line {
+        width: 16px !important;
+        margin-right: 16px !important;
+    }
+
+
+    .formular-description {
+        padding-left: 16px !important;
+    }
+
+    .formular-container {
+        .formular {
+            margin-left: 16px !important;
+            width: calc(100% - 32px) !important;
+        }
+        .formular-description {
+            padding-left: 16px !important;
+            width: calc(100% - 32px) !important;
+        }
     }
 }
