@@ -47,9 +47,9 @@
 
                 div {
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: flex-end;
-                    width: 100%;
+                    width: 50px;
                     height: 50px;
                     margin-right: 35px;
                     overflow: visible;
@@ -60,13 +60,13 @@
                     }
 
                     img {
-                        width: 34.47px;
+                        width: 50px;
                         height: 50px;
-                        object-fit: cover;
+                        object-fit: contain;
 
                         &:hover {
                             height: 60px;
-                            width: 41.37px;
+                            width: 60px;
 
                         }
                     }
@@ -128,7 +128,7 @@
 
             .text-box {
                 margin-top: 2.4305vw !important;
-                height: 26.25vw !important;
+                // height: 26.25vw !important;
 
                 p {
                     font-size: 1.1111vw !important;

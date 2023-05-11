@@ -33,8 +33,8 @@ header {
             }
 
             img {
-                width: 150px;
-                height: 27.9px;
+                width: 200px;
+                // height: 27.9px;
                 object-fit: cover;
             }
         }
@@ -85,6 +85,13 @@ header {
         justify-content: space-between;
         width: 100%;
         padding-right: 100px;
+
+        nav{
+            img{
+                width: 200px !important;
+                object-fit: cover;
+            }
+        }
 
         .close-X {
             &:hover {
