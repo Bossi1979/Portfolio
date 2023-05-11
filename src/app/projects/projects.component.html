@@ -15,8 +15,8 @@
         
 
         <div class="btn-container" [class.direction-end]="i%2 != 0">
-            <button class="btn-live">Live Test</button>
-            <button class="btn-git">Github</button>
+            <button class="btn-live" (click)="openUrl(i)">Live Test</button>
+            <button class="btn-git" (click)="openGitLink(i)">Github</button>
         </div>
 
         <div style="position:absolute; z-index: -2; right: 0px; display: flex; flex-direction: column;" *ngIf="i == projectData.length -1">
