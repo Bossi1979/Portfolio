@@ -57,7 +57,6 @@ formValidation() {
 formsubmit() {
   if(this.valid) {
     // Submit the form if all inputs are valid
-    console.log('send');
     document.getElementsByTagName('form')[0].submit();
     this.inputs[0].value = '';
     this.inputs[1].value = '';
@@ -106,7 +105,6 @@ test(){
   document.getElementById('test').classList;
   setTimeout(() => {
     this.invalidText = document.getElementById('test').classList.contains('invalid-feedback');
-    console.log(this.invalidText);
   },500)
   
 }
