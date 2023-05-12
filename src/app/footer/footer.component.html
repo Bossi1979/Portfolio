@@ -1,8 +1,8 @@
 <footer>
     <div class="logo">
         <img src="../../assets/img/header/logo-transparent-svg.svg" alt="">
-        <a href="#" (mouseover)="showUnderline()" (mouseleave)="hideUnderline()"
-            [class.a-margin]="showunderline">Impressum</a>
+        <a  (mouseover)="showUnderline()" (mouseleave)="hideUnderline()"
+            [class.a-margin]="showunderline" (click)="openImpressum()">Impressum</a>
         <div [class.underline]="showunderline">
 
         </div>
