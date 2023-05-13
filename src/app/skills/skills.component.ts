@@ -66,6 +66,14 @@ mouseMove(index: number): void {
   }, 125);
 }
 
+startAnimation(){
+  for (let i = 0; i < this.skillsBages.length; i++){
+    setTimeout(()=>{
+      this.mouseMove(i);
+    }, 225 * i+1);
+  }
+}
+
 
 
 }

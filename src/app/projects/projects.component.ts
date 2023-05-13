@@ -36,9 +36,9 @@ export class ProjectsComponent {
     {
       imgSrc: '../../assets/img/projects/ring-of-fire.png',
       title: 'Ring of fire',
-      skills: 'Angular | Typescript | HTML | SCSS',
-      description: `Ring of Fire is a drinking game where players draw cards from around the king's cup. Based on the card drawn that player or many players will have to drink according to rules based on the card drawn.`,
-      url: 'https://ring-of-fire.stefan-boskamp.de/',
+      skills: 'Angular | Typescript | HTML | SCSS | Firebase | Material Design',
+      description: `Ring of Fire is a drinking game where players draw cards from around the king's cup. Start a game, share your url with friends and play together online.`,
+      url: 'https://ring-of-fire-1cf24.web.app/',
       gitLink: 'https://github.com/Bossi1979/ring_of_fire',
     },
   ];

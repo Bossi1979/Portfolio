@@ -12,4 +12,11 @@
     color: white;
     padding-bottom: 109px;
     z-index: 11;
+
+    .centering-container{
+        display: flex; 
+        align-items: flex-start; 
+        flex-direction: column; 
+        max-width: 320px;
+    }
 }
