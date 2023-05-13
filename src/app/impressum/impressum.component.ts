@@ -7,24 +7,22 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./impressum.component.scss']
 })
 export class ImpressumComponent implements OnInit {
- 
+
 
   constructor(private service: ServiceService) {
 
   }
 
   ngOnInit(): void {
-  
+
   }
-  
 
   closeImpressum(): void {
     this.service.impressumShown = false;
   }
 
-  impressumShown(){
+  impressumShown() {
     return (this.service.impressumShown);
   }
-
 
 }

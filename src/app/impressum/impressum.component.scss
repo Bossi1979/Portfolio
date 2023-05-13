@@ -1,4 +1,4 @@
-.impressum{
+.impressum {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,10 +13,10 @@
     padding-bottom: 109px;
     z-index: 11;
 
-    .centering-container{
-        display: flex; 
-        align-items: flex-start; 
-        flex-direction: column; 
+    .centering-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
         max-width: 320px;
     }
 }

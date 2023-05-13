@@ -8,9 +8,9 @@ describe('MyHeadlineComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MyHeadlineComponent ]
+      declarations: [MyHeadlineComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MyHeadlineComponent);
     component = fixture.componentInstance;

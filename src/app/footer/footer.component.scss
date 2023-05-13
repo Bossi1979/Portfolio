@@ -3,7 +3,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     height: 291px;
-    // background-color: blue;
     width: 100%;
     background: #141D2F;
     box-sizing: border-box;
@@ -14,11 +13,9 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative;
-        
 
         img {
             width: 216px;
-            // height: 40.14px;
             margin-bottom: 10.75px;
             margin-left: -10px;
         }
@@ -35,13 +32,14 @@ footer {
             cursor: pointer;
         }
 
-        .a-margin{
+        .a-margin {
             margin-bottom: 2px !important;
         }
-        .underline{
-            height: 0px; 
-            width: 55px; 
-            border: 1px solid #1CDAE6; 
+
+        .underline {
+            height: 0px;
+            width: 55px;
+            border: 1px solid #1CDAE6;
         }
     }
 
@@ -54,10 +52,6 @@ footer {
         margin-bottom: 0px;
     }
 }
-
-
-
-
 
 .link {
     display: flex;
@@ -79,38 +73,37 @@ footer {
     }
 }
 
-
 .underlineSelected {
-    position:absolute;
+    position: absolute;
     width: 55.5px;
     height: 0px;
     border-bottom: 3px solid #70E61C !important;
     margin-top: 4px;
 }
 
-@media screen and (max-width:1000px){
-    footer{
+@media screen and (max-width:1000px) {
+    footer {
         justify-content: space-around !important;
         flex-direction: column !important;
     }
 }
 
-@media screen and (max-width: 620px){
-    footer{
+@media screen and (max-width: 620px) {
+    footer {
         padding: 0px 50px !important;
     }
 }
 
-@media screen and (max-width: 492px){
-    footer{
-        p{
+@media screen and (max-width: 492px) {
+    footer {
+        p {
             font-size: 23px !important;
         }
-    } 
+    }
 }
 
-@media screen and (max-width: 460px){
-    footer{
+@media screen and (max-width: 460px) {
+    footer {
         padding: 0px 16px !important;
     }
 }

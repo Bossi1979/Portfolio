@@ -46,9 +46,7 @@
                     cursor: pointer;
                 }
             }
-
         }
-
     }
 
     .vertical-container {
@@ -69,12 +67,7 @@
                 line-height: 120%;
             }
         }
-
     }
-
-
-
-
 }
 
 @media screen and (min-width: 1441px) {
@@ -97,9 +90,7 @@
                     cursor: pointer;
                 }
             }
-
         }
-
     }
 
     .vertical-container {
@@ -125,7 +116,6 @@
             font-size: 22px;
         }
     }
-
 }
 
 @media screen and (max-width: 770px) {
@@ -148,20 +138,14 @@
             cursor: pointer;
         }
     }
-
-
 }
 
-
 @media screen and (max-width: 620px) {
-
     .refs {
         gap: 30px !important;
 
         .line {
             width: 50px !important;
         }
-
     }
-
 }

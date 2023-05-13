@@ -1,24 +1,16 @@
-
-
 .portraitFrame {
-    position:relative;
-    // width: 50.7vw;
-    // height: 705px;
+    position: relative;
     aspect-ratio: 705/730;
-    // width: 730px;
-    // width: 100%;
     background-image: url('../../assets/img/portait/photo_shadows.png');
     background-position: 65% -131%;
     background-size: 111%;
     background-repeat: no-repeat;
     z-index: 1;
-    
 
     img {
         height: 100%;
         width: 82.2%;
         margin-left: 46px;
-        // border: 2px black solid;
         object-fit: contain;
     }
 }
@@ -30,17 +22,13 @@
     margin-top: -3vw;
     margin-right: 0vw;
     margin-left: 12vw;
-
     background: linear-gradient(165.69deg, #1A2743 37.75%, #27334B 43.25%, #141D2F 70.18%);
 }
 
 .mask {
     position: relative;
-    // top: 298.6px;
     overflow: hidden;
     top: 20.7361vw;
-    // position: relative;
-    // top: -505.6px;
 
     img {
         object-fit: cover;
@@ -48,29 +36,20 @@
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .portraitFrame {
         aspect-ratio: 705/730;
-        
-
-        // background-position: 65% -131%;
         background-position: center center;
         display: flex;
         justify-content: center;
-        
-
         background-size: 111%;
         background-repeat: no-repeat;
         z-index: 1;
-        
-    
+
         img {
             height: 100%;
             width: 82.2%;
-
             margin-left: unset;
-
-            // border: 2px black solid;
             object-fit: contain;
         }
     }

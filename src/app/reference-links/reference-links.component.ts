@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ReferenceLinksComponent {
 
-  goToContact(){
+  goToContact() {
     window.location.href = '#contact';
   }
 }

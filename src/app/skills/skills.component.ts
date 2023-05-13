@@ -7,7 +7,7 @@ import { Component, NgModule } from '@angular/core';
 })
 export class SkillsComponent {
 
-  skillsBages =[
+  skillsBages = [
     {
       icon: '../../assets/img/skills/angular-icon.png',
       text: 'Angular',
@@ -58,22 +58,20 @@ export class SkillsComponent {
     },
 
   ]
-  
-mouseMove(index: number): void {
-  this.skillsBages[index].animate = true;
-  setTimeout(() => {
-    this.skillsBages[index].animate = false;
-  }, 125);
-}
 
-startAnimation(){
-  for (let i = 0; i < this.skillsBages.length; i++){
-    setTimeout(()=>{
-      this.mouseMove(i);
-    }, 225 * i+1);
+  mouseMove(index: number): void {
+    this.skillsBages[index].animate = true;
+    setTimeout(() => {
+      this.skillsBages[index].animate = false;
+    }, 125);
   }
-}
 
-
+  startAnimation() {
+    for (let i = 0; i < this.skillsBages.length; i++) {
+      setTimeout(() => {
+        this.mouseMove(i);
+      }, 225 * i + 1);
+    }
+  }
 
 }

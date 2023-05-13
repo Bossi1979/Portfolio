@@ -1,20 +1,20 @@
 .header {
-    display: flex; 
-    justify-content: space-between; 
-    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 167.29px;
     color: white;
 
-    .left-spacer{
+    .left-spacer {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         width: 33.96%;
 
-        span{
+        span {
             height: 0px;
             width: 100px;
-            border: 4px solid #9747FF;  
+            border: 4px solid #9747FF;
         }
     }
 
@@ -31,20 +31,20 @@
         text-align: center;
     }
 
-    .right-spacer{
+    .right-spacer {
         display: flex;
         align-items: center;
         width: 33.61%;
-        span{
+
+        span {
             height: 0px;
             width: 100%;
             border: 4px solid #9747FF;
-            
         }
     }
 }
 
-p{
+p {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -55,30 +55,29 @@ p{
 
 
 @media screen and (max-width: 1350px) {
-    .right-spacer{
+    .right-spacer {
         width: 25.96% !important;
     }
 
-    .left-spacer{
+    .left-spacer {
         width: 25.96% !important;
     }
 
-    h4{
+    h4 {
         width: fit-content !important;
     }
-    
 }
 
-@media  screen and (min-width:1401px){
+@media screen and (min-width:1401px) {
     .header {
         margin-top: 11.61736vw;
-    
+
         h4 {
             font-size: 5.4861vw;
         }
     }
-    
-    p{
+
+    p {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -86,38 +85,35 @@ p{
         color: white;
         font-size: 1.11111vw;
     }
-
-    
 }
-
 
 @media screen and (max-width:769px) {
-    .left-spacer{
+    .left-spacer {
         width: 19.3862% !important;
 
-        span{
+        span {
             width: 51.22% !important;
-            border: 4px solid #9747FF;  
+            border: 4px solid #9747FF;
         }
     }
 
-    .right-spacer{
+    .right-spacer {
         width: 19.3862% !important;
-        span{
+
+        span {
             width: 100% !important;
             border: 4px solid #9747FF;
-            
         }
     }
 
 }
 
-
 @media screen and (max-width:620px) {
-    h4{
-    font-size: 12.74193548vw !important;
+    h4 {
+        font-size: 12.74193548vw !important;
     }
-    p{
+
+    p {
         margin: 0px 50px;
     }
 }

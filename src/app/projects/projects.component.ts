@@ -43,18 +43,17 @@ export class ProjectsComponent {
     },
   ];
 
-  openUrl(i){
+  openUrl(i) {
     let url = this.projectData[i].url;
-    setTimeout(()=>{
+    setTimeout(() => {
       const newTab = window.open(url, '_blank');
-    },500);
-    // const newTab = window.open(url, '_blank');
+    }, 500);
   }
 
-  openGitLink(i){
+  openGitLink(i) {
     let url = this.projectData[i].gitLink;
-    setTimeout(()=>{
+    setTimeout(() => {
       const newTab = window.open(url, '_blank');
-    },500);
+    }, 500);
   }
 }

@@ -8,9 +8,9 @@ describe('UpArrowComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UpArrowComponent ]
+      declarations: [UpArrowComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(UpArrowComponent);
     component = fixture.componentInstance;

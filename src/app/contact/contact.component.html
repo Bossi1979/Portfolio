@@ -4,43 +4,35 @@
 </div>
 
 <div class="formular-container">
-
     <div class="formular-description">
         <h5>Got a problem to solve?</h5>
-        <p>Contact me through this form, I am interested in hearing you, 
+        <p>Contact me through this form, I am interested in hearing you,
             knowing your ideas and contributing to your projects with my work.</p>
         <p>Need a Frontend developer? <span>Contact me!</span></p>
     </div>
-
     <div class="formular">
-        <form class="was-validated" (submit)="formValidation();" action="https://stefan-boskamp.de/send_mail.php" method="POST">
-
+        <form class="was-validated" (submit)="formValidation();" action="https://stefan-boskamp.de/send_mail.php"
+            method="POST">
             <div class="mb-3">
-                <input type="text" class="form-control"  required placeholder="Your name" minlength="3" name="name"  (blur)="nameValidation()" autocomplete="doNotAutoComplete">
-                <div class="feedback">Please enter your name</div>
+                <input type="text" class="form-control" required placeholder="Your name" minlength="3" name="name"
+                    (blur)="nameValidation()" autocomplete="doNotAutoComplete">
+                <div id="name" class="feedback" [class.opacity-zero]="!invalidName">Please enter your name</div>
             </div>
-
             <div class="mb-3">
-                <input type="email" class="form-control"  required placeholder="Your email" minlength="7" name="email" (blur)="emailValidation()" autocomplete="doNotAutoComplete">
-                <div class="feedback" >Please enter your email</div>
+                <input type="email" class="form-control" required placeholder="Your email" minlength="7" name="email"
+                    (blur)="emailValidation()" autocomplete="doNotAutoComplete">
+                <div id="email" class="feedback" [class.opacity-zero]="!invalidEmail">Please enter your email</div>
             </div>
-
             <div class="mb-3">
                 <textarea class="form-control" id="validationTextarea" placeholder="Your message" required
                     style="height: 220px;" (blur)="textValidation()" minlength="2" name="message"></textarea>
-                <div  id="test" class="feedback " [class.opacity-zero]="!invalidText">Please enter a message in the textarea.</div>
+                <div id="textarea" class="feedback " [class.opacity-zero]="!invalidText">Please enter a message in the
+                    textarea.</div>
             </div>
-
             <div class="btn-div">
-                <button  type="submit" [disabled]="!valid" [class.btn-active]="valid" [class.btn]="!valid" (click)="test()">Send message :)</button>
+                <button type="submit" [disabled]="!valid" [class.btn-active]="valid" [class.btn]="!valid"
+                    (click)="checkForInvalidData()">Send message :)</button>
             </div>
-
         </form>
-
     </div>
-
-    
-    
 </div>
-
-

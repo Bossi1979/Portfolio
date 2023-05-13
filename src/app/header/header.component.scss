@@ -52,8 +52,6 @@ header {
         border-bottom: 3px solid #9747FF !important;
         margin-top: 4px;
     }
-
-
 }
 
 .colorGreen {
@@ -61,10 +59,8 @@ header {
 }
 
 .menu-btn {
-
     &:hover {
         cursor: pointer;
-
     }
 }
 
@@ -86,8 +82,8 @@ header {
         width: 100%;
         padding-right: 100px;
 
-        nav{
-            img{
+        nav {
+            img {
                 width: 200px !important;
                 object-fit: cover;
             }
@@ -108,7 +104,6 @@ header {
         height: 100%;
         width: 100%;
         gap: 33px;
-        // background-color: aquamarine;
 
         a {
             font-style: normal;
@@ -125,8 +120,6 @@ header {
             width: 55.5px;
         }
     }
-
-
 }
 
 .burger-menu {
@@ -162,7 +155,7 @@ header {
 
 @media screen and (max-width: 620px) {
     header {
-    
+
         nav {
             display: flex;
             // margin-right: 100px;
@@ -187,9 +180,7 @@ header {
 @media screen and (max-width:460px) {
     nav {
         display: flex;
-        // margin-right: 100px;
         padding: 37px 16px 37px 0px !important;
-
         gap: 29px;
     }
 

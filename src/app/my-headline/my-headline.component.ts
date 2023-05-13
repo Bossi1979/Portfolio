@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MyHeadlineComponent {
 
-  goToContact(){
+  goToContact() {
     window.location.href = '#contact';
   }
 }

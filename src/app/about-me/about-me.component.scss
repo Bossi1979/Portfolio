@@ -28,7 +28,6 @@
             align-items: flex-end;
             padding: 0px;
             margin-top: 35px;
-            // height: 378px;
 
             p {
                 font-family: 'Poppins';
@@ -87,7 +86,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        // width: 778px;
         height: 559px;
         order: 1;
 
@@ -128,7 +126,6 @@
 
             .text-box {
                 margin-top: 2.4305vw !important;
-                // height: 26.25vw !important;
 
                 p {
                     font-size: 1.1111vw !important;
@@ -165,9 +162,9 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .portrait{
-        div{
-            div{
+    .portrait {
+        div {
+            div {
                 width: 8.54vw !important;
             }
         }
@@ -175,35 +172,35 @@
 }
 
 @media screen and (max-width: 900px) {
-    .portrait{
-       display: none !important;
+    .portrait {
+        display: none !important;
     }
 
-    .about-container{
+    .about-container {
         margin-left: unset !important;
         padding: 0px 102px;
         justify-content: flex-start;
         width: unset !important;
-        .about-text{
+
+        .about-text {
             width: unset !important;
         }
-        
+
     }
 }
 
 @media screen and (max-width: 620px) {
-    .about-container{
-        padding: 0px 51px;   
+    .about-container {
+        padding: 0px 51px;
     }
 
-    h4{
+    h4 {
         font-size: 12.74193548vw !important;
     }
 }
 
-@media screen and (max-width:460px){
-    .about-container{
-        padding: 0px 16px !important;   
+@media screen and (max-width:460px) {
+    .about-container {
+        padding: 0px 16px !important;
     }
 }
-

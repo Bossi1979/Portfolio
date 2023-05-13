@@ -8,9 +8,9 @@ describe('PortfolioHeadlinesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PortfolioHeadlinesComponent ]
+      declarations: [PortfolioHeadlinesComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(PortfolioHeadlinesComponent);
     component = fixture.componentInstance;

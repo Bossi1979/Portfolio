@@ -1,19 +1,12 @@
 .myHeadline {
     display: flex;
-    // padding-top: 187.97px;
     justify-content: space-between;
-    // border: 2px red solid; 
-    // height:172px; 
-    // width: 100%;
     margin-top: 11.05vw;
-    // margin-left: -135px;
     margin-left: -20.5%;
     font-size: 5.44vw;
     
-
     img {
         object-fit: cover;
-        // margin-right: 8px;
     }
 }
 
@@ -23,7 +16,6 @@
     font-size: 88%;
     line-height: 120%;
     color: white;
-    // rotate: -90deg;
     transform: rotate(-90deg);
     display: flex;
     margin-right: -65px;
@@ -40,7 +32,6 @@
 .job {
     font-style: normal;
     font-weight: 400;
-    // font-size: 44px;
     font-size: 79%;
     line-height: 120%;
     color: #9747FF;
@@ -89,6 +80,7 @@
             color: black;
             background-color: white;
         }
+
         100%{
            
             color: white;
@@ -113,9 +105,7 @@
         div{
             font-size: 100% !important;
         }
-
     }
-    
     
     .letsTalkButton {
         // height: 4.0278vw;
@@ -127,7 +117,6 @@
             font-size: 23px;
         }
     }
-
 }
 
 @media screen and (max-width:620px){

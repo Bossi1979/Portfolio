@@ -14,9 +14,8 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
-  }
 
+  }
 
   navSelected(navMenu: number): void {
     this.selectedMenuBtn = navMenu;
@@ -25,32 +24,32 @@ export class HeaderComponent implements OnInit {
     selectedMenuId?.classList.add('colorGreen');
   }
 
-  removeMenuUnderlines(){
+  removeMenuUnderlines() {
     for (let i = 1; i < 8; i++) {
       let MenuIds = document.getElementById(`menuId${i}`);
       MenuIds?.classList.remove('colorGreen');
     }
   }
 
-  showMenu(){
+  showMenu() {
     this.animation = true;
     setTimeout(() => {
       this.mobileMenu = true;
       this.animation = false;
     }, 150);
-    
+
   }
 
-  hideMenu(){
+  hideMenu() {
     this.mobileMenu = false;
   }
 
-  mobilMenuSelected(menuId: number){
+  mobilMenuSelected(menuId: number) {
     setTimeout(() => {
       this.hideMenu();
       this.removeMenuUnderlines();
-      if (menuId != 7){
-        this.selectedMenuBtn = menuId -3;
+      if (menuId != 7) {
+        this.selectedMenuBtn = menuId - 3;
         this.navSelected(this.selectedMenuBtn);
       }
     }, 500);

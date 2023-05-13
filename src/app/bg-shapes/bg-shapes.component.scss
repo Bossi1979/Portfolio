@@ -1,12 +1,8 @@
 .mask {
     position: absolute;
-    // top: 298.6px;
     overflow: hidden;
     top: 11.7361vw;
-    // position: relative;
-    // top: -505.6px;
     width: 100%;
-    
 
     img {
         object-fit: cover;
@@ -22,19 +18,14 @@
     margin-top: -3vw;
     margin-right: 0vw;
     margin-left: 12vw;
-    // background-color: #161F31;
-
     background: linear-gradient(165.69deg, #1A2743 37.75%, #27334B 43.25%, #141D2F 70.18%);
 }
-
 
 @media screen and (max-width: 1180px) {
     .mask {
         top: 9.7361vw !important;
-
     }
 }
-
 
 @media screen and (max-width: 768px) {
     .mask {

@@ -8,9 +8,9 @@ describe('ImpressumComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImpressumComponent ]
+      declarations: [ImpressumComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ImpressumComponent);
     component = fixture.componentInstance;

@@ -8,9 +8,9 @@ describe('BgShapesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BgShapesComponent ]
+      declarations: [BgShapesComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(BgShapesComponent);
     component = fixture.componentInstance;

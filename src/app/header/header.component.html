@@ -1,36 +1,32 @@
 <header>
     <nav class="own-logo">
-        <!-- <a href=""><img src="../../assets/img/Group.png" alt=""></a> -->
         <a href=""><img src="../../assets/img/header/logo-transparent-svg.svg" alt=""></a>
     </nav>
     <nav class="d-none d-md-flex">
-        <a href="#about-me" id="menuId1" (click)="navSelected(1)">About me <div *ngIf="selectedMenuBtn == 1" class="underlineSelected">
+        <a href="#about-me" id="menuId1" (click)="navSelected(1)">About me <div *ngIf="selectedMenuBtn == 1"
+                class="underlineSelected">
             </div></a>
-        <a href="#skills" id="menuId2" (click)="navSelected(2)">Skills<div *ngIf="selectedMenuBtn == 2" class="underlineSelected">
+        <a href="#skills" id="menuId2" (click)="navSelected(2)">Skills<div *ngIf="selectedMenuBtn == 2"
+                class="underlineSelected">
             </div></a>
-        <a href="#portfolio" id="menuId3" (click)="navSelected(3)">Portfolio<div *ngIf="selectedMenuBtn == 3" class="underlineSelected">
+        <a href="#portfolio" id="menuId3" (click)="navSelected(3)">Portfolio<div *ngIf="selectedMenuBtn == 3"
+                class="underlineSelected">
             </div></a>
     </nav>
     <nav class="d-flex d-md-none">
         <div class="burger-menu menu-btn" (click)="showMenu()" [class.burger-animation]="animation"></div>
-
-        <!-- <img class="menu-btn" src="../../assets/img/header/btn-menu.png" (click)="showMenu()">
-        <img class="menu-btn" src="../../assets/img/header/btn-menu-transition.png"> -->
     </nav>
-
 </header>
 
 <div class="mobile-menu" *ngIf="mobileMenu">
     <header class="addHeader">
         <nav class="own-logo">
-            <!-- <img src="../../assets/img/Group.png" alt=""> -->
             <img src="../../assets/img/header/logo-transparent-svg.svg" alt="">
-
         </nav>
         <img class="close-X" src="../../assets/img/header/menu-close.png" (click)="hideMenu()">
     </header>
     <div class="menu-content">
-        <div >
+        <div>
             <a href="#about-me" id="menuId4" (click)="navSelected(4); mobilMenuSelected(4)">About me</a>
             <div *ngIf="selectedMenuBtn == 4" class="underline"></div>
         </div>
@@ -47,5 +43,4 @@
             <div *ngIf="selectedMenuBtn == 7" class="underline"></div>
         </div>
     </div>
-
 </div>

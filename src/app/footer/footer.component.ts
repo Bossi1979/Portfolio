@@ -7,22 +7,21 @@ import { ServiceService } from '../service.service';
 })
 export class FooterComponent {
 
-showunderline = false;
+  showunderline = false;
 
-constructor(private service: ServiceService){
+  constructor(private service: ServiceService) {
 
-}
+  }
 
+  showUnderline() {
+    this.showunderline = true;
+  }
 
-showUnderline(){
-  this.showunderline = true;
-}
+  hideUnderline() {
+    this.showunderline = false;
+  }
 
-hideUnderline(){
-  this.showunderline = false;
-}
-
-openImpressum(){
-  this.service.impressumShown = true;
-}
+  openImpressum() {
+    this.service.impressumShown = true;
+  }
 }
