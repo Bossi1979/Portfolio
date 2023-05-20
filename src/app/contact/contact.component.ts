@@ -110,7 +110,6 @@ export class ContactComponent implements OnInit {
       });
       this.checkResponse(response);
     } catch (error) {
-      console.log('Fehler:', error);
       this.service.errorResponseFailed();
     }
   }
