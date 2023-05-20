@@ -21,7 +21,8 @@
             </div>
             <div class="mb-3">
                 <input type="email" class="form-control" required placeholder="Your email" minlength="7" name="email"
-                    (blur)="emailValidation()" autocomplete="doNotAutoComplete">
+                    (blur)="emailValidation()" autocomplete="doNotAutoComplete"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
                 <div id="email" class="feedback" [class.opacity-zero]="!invalidEmail">Please enter your email</div>
             </div>
             <div class="mb-3">

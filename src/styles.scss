@@ -6,10 +6,36 @@
 body{
     background-color: #141D2F;
     font-family: 'Poppins', sans-serif;
-    // background-color: antiquewhite;
     margin: 0px;
-    // overflow: hidden;
-    // overflow-y: scroll;
     scroll-behavior: smooth;
     user-select: none;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #9747ff #141d2f;
+  }
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #9747ff #141d2f;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #141d2f;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #9747ff;
+    border-radius: 15px;
+    border: 0px solid #ffffff;
+  }
