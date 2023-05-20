@@ -15,7 +15,6 @@ export class ServiceService {
 
   update(){
     this.sendingActive = true;
-    console.log(this.sendingActive);
     setTimeout(() => {
       this.sendingActive = false;
     },4000);

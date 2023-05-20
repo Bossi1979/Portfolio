@@ -31,5 +31,4 @@ export class UpArrowComponent {
   goToMyHeadline() {
     window.location.href = '#myHeadline';
   }
-
 }
