@@ -19,6 +19,10 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { UpArrowComponent } from './up-arrow/up-arrow.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { EmailSendComponent } from './email-send/email-send.component';
+
+import { RouterModule, Routes } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -37,12 +41,15 @@ import { ImpressumComponent } from './impressum/impressum.component';
     FooterComponent,
     UpArrowComponent,
     ImpressumComponent,
+    EmailSendComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

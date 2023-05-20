@@ -10,9 +10,10 @@
             knowing your ideas and contributing to your projects with my work.</p>
         <p>Need a Frontend developer? <span>Contact me!</span></p>
     </div>
+
     <div class="formular">
-        <form class="was-validated" (submit)="formValidation();" action="https://stefan-boskamp.de/send_mail.php"
-            method="POST">
+        <form class="was-validated" (submit)="formValidation(); $event.preventDefault();"   
+        method="POST">
             <div class="mb-3">
                 <input type="text" class="form-control" required placeholder="Your name" minlength="3" name="name"
                     (blur)="nameValidation()" autocomplete="doNotAutoComplete">
@@ -35,4 +36,5 @@
             </div>
         </form>
     </div>
+    
 </div>

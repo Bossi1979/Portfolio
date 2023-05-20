@@ -1,0 +1,7 @@
+<div class="message-sending" *ngIf="service.sendingActive || service.sendResponse || service.sendError">
+
+    <h5 class="blinking" id="sending" *ngIf="!service.sendResponse && !service.sendError">Message sending ...</h5>
+    <h5 class="send" *ngIf="service.sendResponse">Message send !</h5>
+    <h5 class="send" *ngIf="service.sendError">Sending failed !</h5>
+
+</div>

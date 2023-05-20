@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class MyHeadlineComponent {
 
+
+  /**
+   * Navigates to the contact section of the page by changing the URL hash to '#contact'.
+   */
   goToContact() {
     window.location.href = '#contact';
   }
