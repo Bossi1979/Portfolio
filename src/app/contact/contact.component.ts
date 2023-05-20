@@ -104,7 +104,7 @@ export class ContactComponent implements OnInit {
    */
   async sendFormData(formData) {
     try {
-      const response = await fetch('https://stefan-boskamp.de/send_mail2.php', {
+      const response = await fetch('https://stefan-boskamp.de/assets/php/send_mail2.php', {
         method: 'POST',
         body: formData,
       });
