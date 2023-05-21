@@ -13,9 +13,7 @@ header {
 
     nav {
         display: flex;
-        // margin-right: 100px;
         padding: 37px 100px 37px 0px;
-
         gap: 29px;
 
         a {
@@ -179,12 +177,14 @@ header {
 @media screen and (max-width:460px) {
     nav {
         display: flex;
-        padding: 37px 16px 37px 0px !important;
+        // padding: 37px 16px 37px 0px !important;
+        padding: 37px 25px 37px 0px !important;
         gap: 29px;
     }
 
     .own-logo {
-        margin-left: 16px !important;
+        // margin-left: 16px !important;
+        margin-left: 25px !important;
         padding: 0px !important;
     }
 }

@@ -248,23 +248,30 @@
 
 @media screen and (max-width:460px) {
     .line {
-        width: 16px !important;
-        margin-right: 16px !important;
+        // width: 16px !important;
+        // margin-right: 16px !important;
+        width: 25px !important;
+        margin-right: 25px !important;
     }
 
     .formular-description {
-        padding-left: 16px !important;
+        // padding-left: 16px !important;
+        padding-left: 25px !important;
     }
 
     .formular-container {
         .formular {
-            margin-left: 16px !important;
-            width: calc(100% - 32px) !important;
+            // margin-left: 16px !important;
+            // width: calc(100% - 32px) !important;
+            margin-left: 25px !important;
+            width: calc(100% - 50px) !important;
         }
 
         .formular-description {
-            padding-left: 16px !important;
-            width: calc(100% - 32px) !important;
+            // padding-left: 16px !important;
+            // width: calc(100% - 32px) !important;
+            padding-left: 25px !important;
+            width: calc(100% - 50px) !important;
         }
     }
 }
