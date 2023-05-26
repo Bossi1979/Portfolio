@@ -92,7 +92,7 @@
         img {
             width: 31.46vw;
             height: 31.46vw;
-            object-fit: contain;
+            object-fit: cover;
             border-radius: 100%;
             border: 4px #00BEE8 solid;
             margin-top: 0.7639vw;
@@ -201,7 +201,6 @@
 
 @media screen and (max-width:460px) {
     .about-container {
-        // padding: 0px 16px !important;
         padding: 0px 25px !important;
     }
 }
